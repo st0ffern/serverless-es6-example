@@ -13,7 +13,7 @@ exec("Compiling", path.join('node_modules', '.bin', 'babel') + " --presets es201
 
 const packageBuilder = new PackageBuilder(servicePath);
 packageBuilder.addFolder("lib");
-packageBuilder.addDependenciesExclude(["node_modules/aws-sdk"]);
+packageBuilder.addFolder("node_modules");
 
 packageBuilder.writeToFileSync(artifactFilePath);
 

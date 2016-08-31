@@ -32,13 +32,13 @@ functions:
           path: uppercase
           method: GET
           cors: true
-  lowercase:
-    handler: lib/handler.lowercase
+  nodefetch:
+    handler: lib/handler.nodefetch
     memory: 128
     timeout: 3
     events:
       - http:
-          path: lowercase
+          path: nodefetch
           method: GET
           cors: true
 
